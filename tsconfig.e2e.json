@@ -3,11 +3,13 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "types": [
-      "cypress"
+      "cypress",
+      "cucumber"
     ]
   },
   "include": [
     "e2e/src/**/*.spec.ts",
-    "e2e/src/**/*.d.ts"
+    "e2e/src/**/*.d.ts",
+    "e2e/src/**/*.step.ts"
   ]
 }
