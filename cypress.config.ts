@@ -1,12 +1,14 @@
 import cucumber from 'cypress-cucumber-preprocessor';
-import browserify from '@cypress/browserify-preprocessor';
-import cypress from 'cypress';
 
-export default cypress.defineConfig({
+import { defineConfig } from 'cypress';
+
+export default defineConfig({
   e2e: {
+    video: false,
+    screenshotOnRunFailure: false,
     setupNodeEvents(on, config) {
+      // preprocess typescript
       const options = {
-        ...browserify.defaultOptions,
         typescript: require.resolve('typescript'),
       };
 

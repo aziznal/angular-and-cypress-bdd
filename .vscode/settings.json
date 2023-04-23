@@ -8,9 +8,9 @@
   },
   "html.format.wrapAttributes": "force-expand-multiline",
   "cucumber.features": [
-    "e2e/src/features/**/*.feature"
+    "**/*.feature"
   ],
   "cucumber.glue": [
-    "e2e/src/step-definitions/**/*.steps.ts"
+    "**/*.steps.ts"
   ],
 }

@@ -8,7 +8,8 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "e2e:run": "cypress run",
-    "e2e:open": "cypress run --watch"
+    "e2e:open": "cypress run --watch",
+    "e2e:tags": "cypress-tags run -e TAGS=@smoke"
   },
   "private": true,
   "dependencies": {
@@ -34,7 +35,7 @@
     "@types/cypress-cucumber-preprocessor": "^4.0.1",
     "@types/jasmine": "~4.0.0",
     "cucumber": "^6.0.7",
-    "cypress": "^12.10.0",
+    "cypress": "^11.2.0",
     "cypress-cucumber-preprocessor": "^4.3.1",
     "jasmine-core": "~4.3.0",
     "karma": "~6.4.0",
@@ -45,7 +46,6 @@
     "typescript": "~4.7.2"
   },
   "cypress-cucumber-preprocessor": {
-    "nonGlobalStepDefinitions": true,
-    "step_definitions": "e2e"
+    "nonGlobalStepDefinitions": true
   }
 }
